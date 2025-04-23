@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiArrowRight } from 'react-icons/fi';
 
 const projects = [
   {
@@ -54,8 +53,39 @@ const projects = [
     image: "/login.png",
     tags: ["Next.js", "Tailwind CSS", "Authentication", "Form Validation"],
     link: "https://login-signup-form-green.vercel.app//"
+  },
+  {
+    id: 7,
+    title: "Unit Converter - Streamlit App",
+    description: "A simple and efficient unit converter built with Python and Streamlit. It allows users to convert values between various units of length, weight, and temperature. The app features a clean UI and is deployed using Streamlit Cloud.",
+    image: "/unit converter.png",
+    tags: ["Python", "Streamlit", "Unit Converter", "Web App"],
+    link: "https://unitconverter00.streamlit.app/"  
+  },
+  {
+    id: 8,
+    title: "Password Generator - Streamlit App",
+    description: "A secure and customizable password generator built using Python and Streamlit. Users can generate strong passwords of varying lengths with options to include uppercase, lowercase, numbers, and special characters. The app is lightweight and deployed using Streamlit Cloud.",
+    image: "/password generator.png",
+    tags: ["Python", "Streamlit", "Password Generator", "Security Tool"],
+    link: "https://password-generate001.streamlit.app/"  
+  },
+  {
+    id: 9,
+    title: "Secure Data Encryption - Streamlit App",
+    description: "A robust data encryption system built with Python and Streamlit, using the Fernet encryption method for secure storage and retrieval of sensitive data. It features passkey hashing, login-based reauthorization, and multiple security layers to ensure data integrity. Deployed with Streamlit Cloud.",
+    image: "/secure data.png",
+    tags: ["Python", "Streamlit", "Fernet", "Data Encryption", "Security"],
+    link: "https://securedata05.streamlit.app/" 
+  },
+  {
+    id: 10,
+    title: "Personal Library Manager - Streamlit App",
+    description: "A simple yet efficient personal library management system built with Python and Streamlit. It allows users to add, view, update, and delete book records, keeping track of their reading list with a user-friendly interface. Deployed using Streamlit Cloud with UV support.",
+    image: "/library manager.png",
+    tags: ["Python", "Streamlit", "Library", "CRUD", "UV"],
+    link: "https://libraryproject03.streamlit.app/"  
   }
-  
   
   
 ];
@@ -120,29 +150,12 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.9 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center py-12"
-        >
-          <Link href="/projects" className="w-full sm:w-auto">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 group hover:opacity-90 transition-all text-sm sm:text-base"
-            >
-              View more Projects
-              <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </motion.button>
-          </Link>
-          </motion.div>
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default Projects ;
 
 
 

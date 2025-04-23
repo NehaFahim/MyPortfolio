@@ -71,7 +71,7 @@ const Navbar = () => {
               </motion.div>
             ))}
             <motion.button
-      onClick={handleResumeClick}  // <- Add this
+      onClick={handleResumeClick}  
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
@@ -129,7 +129,7 @@ const Navbar = () => {
                     ))}
                     
                     <motion.button
-      onClick={handleResumeClick}  // <- Add this
+      onClick={handleResumeClick}  
       className="w-full px-4 py-2 text-sm bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
     >
       Resume
